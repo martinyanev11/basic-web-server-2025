@@ -6,6 +6,8 @@ using System.Net.Sockets;
 using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
+using BasicWebServer.Server.HTTP;
+using BasicWebServer.Server.Routing;
 
 namespace BasicWebServer.Server
 {
@@ -15,13 +17,23 @@ namespace BasicWebServer.Server
         private readonly int _port;
         private readonly TcpListener _serverListener;
 
-        public HttpServer(string ipAddress, int port)
+        private readonly RoutingTable _routingTable;
+
+        public HttpServer(string ipAddress, int port, Action<IRoutingTable> routingTableConfiguration)
         {
             this._ipAddress = IPAddress.Parse(ipAddress);
             this._port = port;
 
             this._serverListener = new TcpListener(_ipAddress, _port);
+
+            routingTableConfiguration(this._routingTable = new RoutingTable());
         }
+
+        public HttpServer(int port, Action<IRoutingTable> routingTable)
+            : this("127.0.0.1", port, routingTable) { }
+
+        public HttpServer(Action<IRoutingTable> routingTable)
+            : this(8080, routingTable) { }
 
         public void Start()
         {
@@ -40,7 +52,11 @@ namespace BasicWebServer.Server
 
                 Console.WriteLine(requestText);
 
-                WriteResponse(networkStream, "Hello from the server!");
+                Request request = Request.Parse(requestText);
+
+                Response response = this._routingTable.MatchRequest(request);
+
+                WriteResponse(networkStream, response);
 
                 connection.Close();
             }
