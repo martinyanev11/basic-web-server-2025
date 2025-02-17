@@ -14,6 +14,10 @@ namespace BasicWebServer.Server.HTTP
         {
             Guard.AgainstNull(name, nameof(name));
             Guard.AgainstNull(value, nameof(value));
+
+            // THIS WAS MISSING !!!
+            this.Name = name;
+            this.Value = value;
         }
 
         public string Name { get; init; }
