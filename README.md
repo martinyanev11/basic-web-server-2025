@@ -33,10 +33,10 @@ Project for the **"Web Dev Basics"** course from the official **"Applied Program
 - [x] **1. Implement Routing**  
   - [X] Add Specific HTTP Responses 
   - [X] Implement Routing Table
-  - [ ] Use the Response Classes and Routing
+  - [X] Use the Response Classes and Routing
 
 - [ ] **2. Add Form Functionality**  
-  - [ ] Create the Form and Map Requests  
+  - [X] Create the Form and Map Requests  
   - [ ] Implement Form Parsing in the Request
   - [ ] Modify Response Result
   - [ ] Create a Pre-Render Action and Try It Out  
