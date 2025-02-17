@@ -9,6 +9,7 @@ namespace BasicWebServer.Server.HTTP
         public const string Date = "Date";
         public const string Location = "Location";
         public const string Server = "Server";
+        public const string Novo = "Novo";
 
         public Header(string name, string value)
         {
