@@ -56,6 +56,11 @@ namespace BasicWebServer.Server
 
                 Response response = this._routingTable.MatchRequest(request);
 
+                if (response.PreRenderAction != null)
+                {
+                    response.PreRenderAction(request, response);
+                }
+
                 WriteResponse(networkStream, response);
 
                 connection.Close();
