@@ -13,7 +13,7 @@ namespace BasicWebServer.Demo
 </form>";
 
 
-        public static void Main()
+        public async static Task MainAsync()
         {
             HttpServer server = new HttpServer(routes => routes
                 .MapGet("/", new TextResponse("Hello from the server!"))
@@ -21,7 +21,7 @@ namespace BasicWebServer.Demo
                 .MapGet("/Redirect", new RedirectResponse("https://softuni.org/"))
                 .MapPost("/HTML", new TextResponse("", StartUp.AddFormDataAction)));
 
-            server.Start();
+            await server.StartAsync();
         }
 
         private static void AddFormDataAction(Request request, Response response)
