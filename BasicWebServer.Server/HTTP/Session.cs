@@ -6,6 +6,7 @@
     {
         public const string SessionCookieName = "MyWebServerSID";
         public const string SessionCurrentDateKey = "CurrentDate";
+        public const string SessionUserKey = "AuthenticatedUserId";
 
         private Dictionary<string, string> _data;
 
@@ -29,5 +30,7 @@
         {
             return this._data.ContainsKey(key);
         }
+
+        public void Clear() => this._data.Clear();
     }
 }
