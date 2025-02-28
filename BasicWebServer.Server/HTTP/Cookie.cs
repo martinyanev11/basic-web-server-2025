@@ -4,7 +4,6 @@
 
     public class Cookie
     {
-        // ok
         public Cookie(string name, string value)
         {
             Guard.AgainstNull(name, nameof(name));
