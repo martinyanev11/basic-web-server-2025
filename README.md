@@ -35,50 +35,50 @@ Project for the **"Web Dev Basics"** course from the official **"Applied Program
   - [X] Implement Routing Table
   - [X] Use the Response Classes and Routing
 
-- [ ] **2. Add Form Functionality**  
+- [X] **2. Add Form Functionality**  
   - [X] Create the Form and Map Requests  
-  - [ ] Implement Form Parsing in the Request
-  - [ ] Modify Response Result
-  - [ ] Create a Pre-Render Action and Try It Out  
+  - [X] Implement Form Parsing in the Request
+  - [X] Modify Response Result
+  - [X] Create a Pre-Render Action and Try It Out  
 
 </details>
 
 <details>
   <summary>3️⃣ Asynchronous Programming</summary>
 
-- [ ] **1. Make the Web Server Run Asynchronously**  
-  - [ ] Modify the HttpServer Class 
-  - [ ] Modify the Startup Class
+- [X] **1. Make the Web Server Run Asynchronously**  
+  - [X] Modify the HttpServer Class 
+  - [X] Modify the Startup Class
 
-- [ ] **2. Download Web Content as a File**  
-  - [ ] Create File Response
-  - [ ] Modify the Startup Class
-  - [ ] Try File Downloading
+- [X] **2. Download Web Content as a File**  
+  - [X] Create File Response
+  - [X] Modify the Startup Class
+  - [X] Try File Downloading
 
 </details>
 
 <details>
   <summary>4️⃣ State Management</summary>
 
-- [ ] **1. Implement Cookie Functionality**  
-  - [ ] Create Cookies Classes 
-  - [ ] Parse Cookies in the Request
-  - [ ] Add Cookies to the Response
-  - [ ] Modify the Startup Class
-  - [ ] Examine Cookies in the Browser
+- [x] **1. Implement Cookie Functionality**  
+  - [x] Create Cookies Classes 
+  - [x] Parse Cookies in the Request
+  - [x] Add Cookies to the Response
+  - [x] Modify the Startup Class
+  - [x] Examine Cookies in the Browser
 
-- [ ] **2. Implement Session Functionality**  
-  - [ ] Create Session Class
-  - [ ] Get the Session from the Request
-  - [ ] Modify the HTTP Server
-  - [ ] Examine Session in the Browser
-  - [ ] Display Session Info on a Page
+- [x] **2. Implement Session Functionality**  
+  - [x] Create Session Class
+  - [x] Get the Session from the Request
+  - [x] Modify the HTTP Server
+  - [x] Examine Session in the Browser
+  - [x] Display Session Info on a Page
 
-- [ ] **3. Implement Login + Profile + Logout**  
-  - [ ] Implement `GET` to `/Login`
-  - [ ] Implement `POST` to `/Login`
-  - [ ] Implement `GET` for `/Logout`
-  - [ ] Implement `GET` for `/UserProfile`
+- [x] **3. Implement Login + Profile + Logout**  
+  - [x] Implement `GET` to `/Login`
+  - [x] Implement `POST` to `/Login`
+  - [x] Implement `GET` for `/Logout`
+  - [X] Implement `GET` for `/UserProfile`
      
 </details>
 
